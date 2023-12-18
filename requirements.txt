@@ -202,11 +202,11 @@
 # notebook_shim @ file:///C:/ci_311/notebook-shim_1678144850856/work
 # numba @ file:///C:/b/abs_b3bxhjeez4/croot/numba_1684245497898/work
 # numexpr @ file:///C:/b/abs_afm0oewmmt/croot/numexpr_1683221839116/work
-numpy @ file:///C:/Users/dev-admin/mkl/numpy_and_numpy_base_1682982345978/work
-numpydoc @ file:///C:/ci_311/numpydoc_1676453412027/work
+numpy
+numpydoc 
 # openpyxl==3.0.10
 # packaging @ file:///C:/b/abs_ed_kb9w6g4/croot/packaging_1678965418855/work
-pandas @ file:///C:/ci_311_rebuilds/pandas_1679004481142/work
+pandas
 # pandocfilters @ file:///opt/conda/conda-bld/pandocfilters_1643405455980/work
 # panel @ file:///C:/b/abs_3a8jdo31kd/croot/panel_1690837306872/work
 # param @ file:///C:/b/abs_f5xzp6ism6/croot/param_1684915326009/work
