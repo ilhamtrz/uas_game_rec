@@ -21,11 +21,15 @@ def game_recommender(game_title, games=games_list, doc_sims=doc_sim_df):
     return similar_games
 
 
+st.set_page_config(page_title = 'Rekomendasi Video Game - Ilham Triza Kurniawan', layout = 'wide')
+
+
 
 st.title('Sistem Rekomendasi Video Game 🎮')
 st.header("Menggunakan Algoritma TF-IDF dan Cosine Similarity", divider = "blue")
+margin_left, col_left, margin_mid, col_right, margin_right = st.columns([0.2,5,1,5,0.2])
 
-user_input = st.text_input(
+user_input = col_left.text_input(
     "Judul Video Game",
     placeholder = 'Masukkan Judul Video Game yang diinginkan'
     )
@@ -41,5 +45,5 @@ def btn_action():
         st.session_state.output = "Video Game tidak dapat ditemukan"
 
 
-st.button('Submit',on_click=btn_action)
-st.write(st.session_state.output)
+col_left.button('Submit',on_click=btn_action)
+col_right.write(st.session_state.output)
