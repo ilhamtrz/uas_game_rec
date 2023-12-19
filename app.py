@@ -23,10 +23,8 @@ def game_recommender(game_title, games=games_list, doc_sims=doc_sim_df):
 
 st.set_page_config(page_title = 'Rekomendasi Video Game - Ilham Triza Kurniawan', layout = 'wide')
 
-
-
 st.title('Sistem Rekomendasi Video Game 🎮')
-st.header("Menggunakan Algoritma TF-IDF dan Cosine Similarity", divider = "blue")
+st.header("Menggunakan Algoritma TF-IDF dan Cosine Similarity", divider = "violet")
 margin_left, col_left, margin_mid, col_right, margin_right = st.columns([0.2,5,1,5,0.2])
 
 user_input = col_left.text_input(
