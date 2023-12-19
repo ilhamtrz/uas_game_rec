@@ -6,9 +6,10 @@ df = pd.read_csv("top_500.csv")
 doc_sim_df = pd.read_csv("similarity.csv")
 
 games_list = df['Title'].values
+description_list = df['Game Description'].values
 
 
-def game_recommender(game_title, games=games_list, doc_sims=doc_sim_df):
+def game_recommender(game_title, games=games_list, descriptions=description_list, doc_sims=doc_sim_df):
     # find game id
     game_idx = np.where(games == game_title)[0][0]
     # get game similarities
@@ -17,8 +18,15 @@ def game_recommender(game_title, games=games_list, doc_sims=doc_sim_df):
     similar_game_idxs = np.argsort(-game_similarities)[1:6]
     # get top 5 games
     similar_games = games[similar_game_idxs]
-    # return the top 5 games
-    return similar_games
+    # get top 5 games description
+    similar_description = descriptions[similar_game_idxs]
+    # Create a DataFrame with game titles and descriptions
+    similar_games_df = pd.DataFrame({
+        'Title': similar_games,
+        'Description': similar_description
+    })
+
+    return similar_games_df
 
 
 st.set_page_config(page_title = 'Rekomendasi Video Game - Ilham Triza Kurniawan', layout = 'wide')
@@ -38,7 +46,7 @@ if 'output' not in st.session_state:
 
 def btn_action(): 
     try:
-        st.session_state.output = game_recommender(user_input.lower(),games_list, doc_sim_df)
+        st.session_state.output = game_recommender(user_input.lower(),games_list,description_list, doc_sim_df)
     except:
         st.session_state.output = "Video Game tidak dapat ditemukan"
 
