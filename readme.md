@@ -1,8 +1,6 @@
 # **Sistem Rekomendasi Video Game menggunakan Algoritma TF-IDF dan Cosine Similarity**
 
-## Sistem Temu Kembali Informasi
-
-## Ilham Triza Kurniawan (A11.2022.14193)
+## Ilham Triza Kurniawan (A11.2022.14193) - Sistem Temu Kembali Informasi
 
 ---
 
