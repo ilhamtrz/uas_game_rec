@@ -7,6 +7,7 @@
 ## Dataset
 
 Dataset diambil dari kaggle → [![Kaggle Badge](https://img.shields.io/badge/Kaggle-blue?style=flat&logo=kaggle&logoColor=white)](https://www.kaggle.com/datasets/nikatomashvili/steam-games-dataset/data)
+
 Pada dataset terdapat 16 Kolom:
 
 - Title
