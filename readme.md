@@ -42,7 +42,7 @@ Sistem rekomendasi berdasarkan deskripsi game dapat menjadi solusi yang berguna 
   - Normalisasi pada kolom "Game Description" (menyeragamkan menjadi lower, tokenisasi)
 - Method :
   - SKLearn digunakan untuk melakukan vektorisasi TF-IDF
-  - SKLearn digunakan untuk menghitung similaritas berdasarkan matrix TF-IDF dari vektorisasi
+  - SKLearn digunakan untuk menghitung similaritas (cosine similarity) berdasarkan matrix TF-IDF dari vektorisasi
   - Outputnya adalah 5 judul game yang memiliki deskripsi yang serupa dari input judul game yang dimasukkan pengguna
 
 ## Performa Uji
