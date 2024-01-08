@@ -53,4 +53,17 @@ Setelah dilakukan pengujian hasil Average Hit Ratio yang didapat: 0.224
 
 ## Deployment
 
-- Sistem Rekomendasi Video Game dapat dicoba di → [![Streamlit Badge](https://img.shields.io/badge/Streamlit-red?style=flat&logo=streamlit&logoColor=white)](https://ilhamtriza-game-rec.streamlit.app/)
+Sistem Rekomendasi Video Game dapat dicoba di → [![Streamlit Badge](https://img.shields.io/badge/Streamlit-red?style=flat&logo=streamlit&logoColor=white)](https://ilhamtriza-game-rec.streamlit.app/)
+
+Jika Kebingunan untuk pengetesan awal, Anda dapat menginput judul game sebagai berikut:
+
+- elden ring
+- phasmophobia
+- terraria
+- unturned
+- stardew valley
+- v rising
+
+Jika ingin menguji daftar game yang tidak memiliki rekomendasi, Anda dapat memasukkan judul apapun.
+
+Anda perlu menekan tombol "Submit" untuk mengirim judul game yang ingin direkomendasi
